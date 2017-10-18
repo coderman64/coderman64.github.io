@@ -44,11 +44,11 @@
   @keyframes toOpenSidebar {
       from{
           width: 0px;
-          padding: 20px 0px 0px 0px;
+          padding: 0px 0px 0px 0px;
       }
       to {
           width: 220px;
-          padding: 20px 20px 20px 20px;
+          padding: 0px 20px 0px 20px;
       }
   }
 
@@ -125,7 +125,7 @@
       background-color:white;
       border-left: 1px solid #eeeeee;
       font-family: Arial, Helvetica, sans-serif;
-      padding: 20px 0px 20px 0px;
+      padding: 0px 0px 0px 0px;
       overflow: hidden;
   }
   #sidebar1 a:link{
@@ -139,4 +139,6 @@
   #innersidebar{
     width: 200px;
     overflow-y: auto;
+    padding: 0px 0px 0px 0px;
+    height:100%;
   }

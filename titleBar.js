@@ -64,8 +64,7 @@ hamButton.addEventListener('click',function(e){
     sidebar1.style.animationDirection = "normal";
     sidebar1.style.animationDuration = "0.3s";
     sidebar1.style.width = "220px";
-    sidebar1.style.padding = "20px 20px 20px 20px";
-    sidebar1.style.height = window.innerWidth+"px";
+    sidebar1.style.padding = "0px 20px 0px 20px";
     sidebar1.style.animationPlayState = "running";
   }
   else
@@ -100,7 +99,11 @@ hamButton.addEventListener('click',function(e){
     sidebar1.style.animationDirection = "reverse";
     sidebar1.style.animationDuration = "0.3s";
     sidebar1.style.width = "0px";
-    sidebar1.style.padding = "20px 0px 20px 0px"
+    sidebar1.style.padding = "0px 0px 0px 0px"
     sidebar1.style.animationPlayState = "running";
   }
+});
+
+window.addEventListener('resize',function(e){
+    sidebar1.style.height = window.innerHeight.toString()+"px";
 });
