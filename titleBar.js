@@ -1,5 +1,5 @@
 var mainTitle = document.getElementById("mainTitle");
-sidebar1.style.height = window.innerHeight.toString()+"px";
+
 window.addEventListener("scroll",function(e){
   console.log(window.scrollY);
   if(window.scrollY > 7){
@@ -21,6 +21,7 @@ var hamTop = document.getElementById("TopHamburger");
 var hamMid = document.getElementById("MidHamburger");
 var hamLow = document.getElementById("LowHamburger");
 var sidebar1 = document.getElementById("sidebar1");
+sidebar1.style.height = window.innerHeight.toString()+"px";
 var toggle = false;
 sidebar1.addEventListener("animationend",function(e){
     hamLow.style.animationPlayState = "paused";
