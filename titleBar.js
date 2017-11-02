@@ -1,4 +1,5 @@
 var mainTitle = document.getElementById("mainTitle");
+sidebar1.style.height = window.innerHeight.toString()+"px";
 window.addEventListener("scroll",function(e){
   console.log(window.scrollY);
   if(window.scrollY > 7){
