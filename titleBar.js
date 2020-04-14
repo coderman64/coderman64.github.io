@@ -1,7 +1,6 @@
 var mainTitle = document.getElementById("mainTitle");
 
 window.addEventListener("scroll",function(e){
-  console.log(window.scrollY);
   if(window.scrollY > 7){
     mainTitle.style.animationName = "toWhite";
     mainTitle.style.animationDuration = "0.3s";
@@ -32,7 +31,6 @@ sidebar1.addEventListener("animationend",function(e){
     hamMid.style.animationName = "unset";
     hamLow.style.animationName = "unset";
     sidebar1.style.animationName = "unset";
-    console.log("DONE");
 });
 hamButton.addEventListener('click',function(e){
   if(toggle == false){

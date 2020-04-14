@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coderman64's Github</title>
+  <link rel="stylesheet" type="text/css" href="../index.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js"></script>
+  <style>
+    .galleria{ 
+      width: 50%;
+      float:right;
+      height: 400px; 
+      background: #000;
+    }
+    .description {
+      width:50%;
+      float: left;
+    }
+
+    .badge {
+      width: 200px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="coolBackground"></div>
+
+  <!--top bar-->
+  <div id="mainTitle">
+    <a href="/index.html"><img src="../logo.png" width="200px" style="margin-top:0px; margin-left:0px;"></a>
+    <div id="sidebar1">
+      <div id="innersidebar">
+        <h2>Games</h2>
+        <ul>
+          <li><a href="http://coderman64.github.io/ThePath/">The Path</a></li>
+          <li><a href="http://coderman64.github.io/TheBlock/">The Block</a></li>
+        </ul>
+        <h2>Web Experiments</h2>
+        <ul>
+          <li><a href="http://coderman64.github.io/HTML-navigation-app">Navigation App Attempt</a></li>
+          <li><a href="http://coderman64.github.io/webWindow/">webWindow</a></li>
+          <li><a href="http://coderman64.github.io/web-synth/">web synth</a>s</li>
+        </ul>
+        <h2>Other</h2>
+        <ul>
+          <li><a href="http://coderman64.github.io/Cyntacs">Cyntacs</a></li>
+          <li><a href="http://coderman64.github.io/screen-recorder/">screen recorder</a></li>
+          <li><a href="http://coderman64.github.io/browsi/">Browsi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="hamburgerButton" width="50px" height="50px"
+      style="background-color:white; height: 50px; width: 50px; position: fixed; top: 10px; right: 10px;padding: 0 0 0 0;z-index:90;">
+      <div id="TopHamburger"
+        style="height:4px;width:20px; position:relative; left:15px; top:16px; background-color:#888888; transform:rotate(0deg);">
+      </div>
+      <div id="MidHamburger"
+        style="height:4px;width:20px; position:relative; left:15px; top:19px; background-color:#888888;"></div>
+      <div id="LowHamburger"
+        style="height:4px;width:20px; position:relative; left:15px; top:22px; background-color:#888888;"></div>
+    </div>
+  </div>
+
+  <!--main content-->
+  <div id="mainContent">
+    <h1>The Path</h1>
+    <div class = "description" style="color:grey;">
+      <em>
+      <p>Welcome to The Path!</p>
+      <p>In a world of black and white, you must forge your road ahead through a treacherous jungle of dots. Three different powerups will help you along your way, but beware! Or you might just find your path has come to an end.</p>
+      <p>Features:</p>
+      <ul>
+        <li>Infinite, progressively more difficult gameplay.</li>
+        <li>3 distinct types of powerups.</li>
+        <li>Smart scaling for any display.</li>
+        <li>Offline gameplay.</li>
+        <li>Pure awesomeness!</li>
+      </ul>
+      <p>The Path is (c) 2020 by Coderman64, all rights reserved.</p>
+      </em>
+      <p style="margin-left: 2em;">- Description of The Path on Google Play</p>
+    </div>
+    <div class = "galleria">
+      <img src="images/Path1.png">
+      <img src="images/Path2.png">
+      <img src="images/Path3.png">
+      <img src="images/Path4.png">
+      <img src="images/Path5.png">
+      <img src="images/Path6.png">
+      <img src="images/PathGear1.png">
+      <img src="images/PathGear2.png">
+      <img src="images/PathGear3.png">
+      <img src="images/PathGear4.png">
+      <img src="images/PathGear5.png">
+    </div>
+    <script>
+      (function() {
+        Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+      }());
+  </script>
+    <div>
+      <h2>What is it?</h2>
+      <p>
+        The Path is a game that I first created around 2017 for Android phones 
+        and Samsung smartwatches. While it has had only modest success on
+        Google Play, it has been downloaded over 9,000 times on the Galaxy Watch
+        Store and counting. 
+      </p>
+      <p>
+        Originally, I created the app around its pronounced visual style and the
+        idea of an "infinite runner" type game that only allowed you to turn 
+        at right angles. After building a 
+        <a href="https://coderman64.github.io/ThePath/">quick mockup</a> of the 
+        game, I used technologies such as 
+        <a href="https://cordova.apache.org/">Apache Cordova</a> to build it 
+        into a full app featuring powerups to shake up the gameplay a bit, as
+        well as a healthy amount of polish.
+      </p>
+      <p>
+        If you're interested in playing it, check it out at the links below!
+      </p>
+      <a href='https://play.google.com/store/apps/details?id=net.coderman64.ThePath&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class="badge"/></a>
+      <a href="https://galaxy.store/thepath"><img src="https://galaxy.store/badgeImage" alt="Available on Samsung Galaxy Apps" style="max-width: 100%; height: auto;" class="badge"></a>
+    </div>
+  </div>
+
+  <!--footer-->
+  <div id="footer">
+    <div>The Coderman64 logo is &copy; 2020 Coderman64, all rights reserved. <br>Having issues? Click <a
+        href="Help.html">here</a></div>
+    <div style="background-color:white; height:50px; width: 150px; margin-left:auto;"><img src="../logo.png"
+        width="150px"></div>
+  </div>
+
+  <!--fade effect for top bar, as you scroll down the page-->
+  <script src="../titleBar.js"></script>
+</body>
+
+</html>

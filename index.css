@@ -68,6 +68,7 @@
     font-family: Courier New, Courier, monospace;
     position:fixed;
     border-bottom: unset;
+    z-index: 99999999;
   }
   #mainContent {
     margin: 20em 0 -10px 0;
