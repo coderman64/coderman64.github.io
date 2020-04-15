@@ -9,18 +9,33 @@
   <link rel="stylesheet" type="text/css" href="../index.css">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js"></script>
   <style>
-    .galleria{ 
+    .galleria {
       width: 50%;
-      float:right;
-      height: 400px; 
+      float: right;
+      height: 400px;
       background: #000;
+      margin-bottom: 10px;
     }
+
     .description {
-      width:50%;
-      float: left;
+      width: 50%;
+    }
+
+    @media only screen and (max-device-width : 480px) {
+      .galleria {
+        width: 100%;
+        float: inline-start;
+        height: 400px;
+        background: #000;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        width: 100%;
+      }
     }
 
     .badge {
@@ -71,23 +86,7 @@
   <!--main content-->
   <div id="mainContent">
     <h1>The Path</h1>
-    <div class = "description" style="color:grey;">
-      <em>
-      <p>Welcome to The Path!</p>
-      <p>In a world of black and white, you must forge your road ahead through a treacherous jungle of dots. Three different powerups will help you along your way, but beware! Or you might just find your path has come to an end.</p>
-      <p>Features:</p>
-      <ul>
-        <li>Infinite, progressively more difficult gameplay.</li>
-        <li>3 distinct types of powerups.</li>
-        <li>Smart scaling for any display.</li>
-        <li>Offline gameplay.</li>
-        <li>Pure awesomeness!</li>
-      </ul>
-      <p>The Path is (c) 2020 by Coderman64, all rights reserved.</p>
-      </em>
-      <p style="margin-left: 2em;">- Description of The Path on Google Play</p>
-    </div>
-    <div class = "galleria">
+    <div class="galleria">
       <img src="images/Path1.png">
       <img src="images/Path2.png">
       <img src="images/Path3.png">
@@ -101,43 +100,68 @@
       <img src="images/PathGear5.png">
     </div>
     <script>
-      (function() {
+      (function () {
         Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
-        Galleria.run('.galleria');
+        Galleria.run('.galleria', {
+          autoplay: 5000
+        });
       }());
-  </script>
+    </script>
+    <div class="description" style="color:grey;">
+      <em>
+        <p>Welcome to The Path!</p>
+        <p>In a world of black and white, you must forge your road ahead through a treacherous jungle of dots. Three
+          different powerups will help you along your way, but beware! Or you might just find your path has come to an
+          end.</p>
+        <p>Features:</p>
+        <ul>
+          <li>Infinite, progressively more difficult gameplay.</li>
+          <li>3 distinct types of powerups.</li>
+          <li>Smart scaling for any display.</li>
+          <li>Offline gameplay.</li>
+          <li>Pure awesomeness!</li>
+        </ul>
+        <p>The Path is (c) 2020 by Coderman64, all rights reserved.</p>
+      </em>
+      <p style="margin-left: 2em;">- Description of The Path on Google Play</p>
+    </div>
     <div>
       <h2>What is it?</h2>
       <p>
-        The Path is a game that I first created around 2017 for Android phones 
+        The Path is a game that I first created around 2017 for Android phones
         and Samsung smartwatches. While it has had only modest success on
         Google Play, it has been downloaded over 9,000 times on the Galaxy Watch
-        Store and counting. 
+        Store and counting.
       </p>
       <p>
         Originally, I created the app around its pronounced visual style and the
-        idea of an "infinite runner" type game that only allowed you to turn 
-        at right angles. After building a 
-        <a href="https://coderman64.github.io/ThePath/">quick mockup</a> of the 
-        game, I used technologies such as 
-        <a href="https://cordova.apache.org/">Apache Cordova</a> to build it 
+        idea of an "infinite runner" type game that only allowed you to turn
+        at right angles. After building a
+        <a href="https://coderman64.github.io/ThePath/">quick mockup</a> of the
+        game, I used technologies such as
+        <a href="https://cordova.apache.org/">Apache Cordova</a> to build it
         into a full app featuring powerups to shake up the gameplay a bit, as
         well as a healthy amount of polish.
       </p>
       <p>
         If you're interested in playing it, check it out at the links below!
       </p>
-      <a href='https://play.google.com/store/apps/details?id=net.coderman64.ThePath&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class="badge"/></a>
-      <a href="https://galaxy.store/thepath"><img src="https://galaxy.store/badgeImage" alt="Available on Samsung Galaxy Apps" style="max-width: 100%; height: auto;" class="badge"></a>
+      <a
+        href='https://play.google.com/store/apps/details?id=net.coderman64.ThePath&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+          alt='Get it on Google Play'
+          src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+          class="badge" /></a>
+      <a href="https://galaxy.store/thepath"><img src="https://galaxy.store/badgeImage"
+          alt="Available on Samsung Galaxy Apps" style="max-width: 100%; height: auto;" class="badge"></a>
     </div>
   </div>
 
   <!--footer-->
   <div id="footer">
-    <div>The Coderman64 logo is &copy; 2020 Coderman64, all rights reserved. <br>Having issues? Click <a
-        href="Help.html">here</a></div>
-    <div style="background-color:white; height:50px; width: 150px; margin-left:auto;"><img src="../logo.png"
-        width="150px"></div>
+    <div style="margin-bottom: 1em;">"Coderman64," and the Coderman64 logo are all &copy; 2017 Coderman64, all rights
+      reserved. <br>Having issues? Click <a href="Help.html">here</a></div>
+    <div style="background-color:white; height:50px; width: 150px; margin-left:auto;"><img src="../logo.png" width="150px">
+    </div>
   </div>
 
   <!--fade effect for top bar, as you scroll down the page-->
