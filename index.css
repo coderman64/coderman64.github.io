@@ -1,10 +1,10 @@
 @keyframes toWhite {
-    from {background-color: transparent; border-bottom: 0px solid transparent;}
-    to {background-color: white; border-bottom: 1px solid #cccccc;}
+    from {background-color: transparent; border-bottom: 0px solid transparent; color:white;}
+    to {background-color: white; border-bottom: 1px solid #cccccc;color:black;}
   }
   @keyframes toClear {
-    from {background-color: white; border-bottom: 1px solid #cccccc;}
-    to {background-color: transparent; border-bottom: 0px solid transparent;}
+    from {background-color: white; border-bottom: 1px solid #cccccc;color:black;}
+    to {background-color: transparent; border-bottom: 0px solid transparent;color:white;}
   }
   @keyframes toDownX {
     from {
@@ -63,13 +63,38 @@
     top: 0;
     left: 0;
     width:100%;
-    padding: 10px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
     background-color:unset;
     font-family: Courier New, Courier, monospace;
     position:fixed;
     border-bottom: unset;
     z-index: 99999999;
+    color: white;
   }
+
+  #mainTitle .NavButton {
+    vertical-align: middle;
+    margin: 0 0 0 0;
+    padding: 0 0 0 10px;
+    font-size: 1.5em;
+    display: inline-table;
+    transition: transform 0.5s;
+  }
+
+  #mainTitle .NavButton:hover {
+    vertical-align: middle;
+    margin: 0 0 0 0;
+    padding: 0 0 0 10px;
+    font-size: 1.5em;
+    display: inline-table;
+    transform: rotate(5deg) rotateY(360deg) scale(1.1);
+  }
+
+  #mainTitle .NavButton a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
   #mainContent {
     margin: 40vh 0 -10px 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -123,6 +148,9 @@
     #coolBackground{
       background-size:150%;
     }
+    #mainTitle .NavButton {
+      font-size: 0;
+    }
   }
 
   /*sidebar*/
@@ -136,6 +164,7 @@
       font-family: Arial, Helvetica, sans-serif;
       padding: 0px 0px 0px 0px;
       overflow: hidden;
+      color: black;
   }
   #sidebar1 a:link{
     color:green;

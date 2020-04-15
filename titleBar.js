@@ -1,18 +1,21 @@
 var mainTitle = document.getElementById("mainTitle");
 
 window.addEventListener("scroll",function(e){
+  mainTitle.style.transition = "background-color 0.3s, border-bottom 0.3s, color 0.3s"
   if(window.scrollY > 7){
-    mainTitle.style.animationName = "toWhite";
-    mainTitle.style.animationDuration = "0.3s";
+    //mainTitle.style.animationName = "toWhite";
+    //mainTitle.style.animationDuration = "0.3s";
     mainTitle.style.backgroundColor = "white";
     mainTitle.style.borderBottom = "1px solid #cccccc";
+    mainTitle.style.color = "black";
   }
   else
   {
-    mainTitle.style.animationName = "toClear";
-    mainTitle.style.animationDuration = "0.3s";
+    //mainTitle.style.animationName = "toClear";
+    //mainTitle.style.animationDuration = "0.3s";
     mainTitle.style.backgroundColor = "transparent";
     mainTitle.style.borderBottom = "1px solid transparent";
+    mainTitle.style.color = "white";
   }
 })
 var hamButton = document.getElementById("hamburgerButton");
