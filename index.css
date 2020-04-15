@@ -75,19 +75,22 @@
   #mainTitle .NavButton {
     vertical-align: middle;
     margin: 0 0 0 0;
-    padding: 0 0 0 10px;
+    padding: 0 5px 0 5px;
     font-size: 1.5em;
     display: inline-table;
-    transition: transform 0.5s;
+    text-shadow: 0 0 0 #000000;
+    transform: scale(1);
+    transition: transform 0.5s, text-shadow 1s;
   }
 
   #mainTitle .NavButton:hover {
-    vertical-align: middle;
-    margin: 0 0 0 0;
-    padding: 0 0 0 10px;
-    font-size: 1.5em;
-    display: inline-table;
-    transform: rotate(5deg) rotateY(360deg) scale(1.1);
+    transform: scale(1.1);
+    text-shadow: 2px 2px 2px #00000099;
+  }
+
+  #mainTitle .CurrentNav {
+    /*background-color: #00000022;*/
+    font-weight: bold;
   }
 
   #mainTitle .NavButton a {
