@@ -106,7 +106,7 @@
   }
   #coolBackground{
     background-image:url("background2.png");
-    background-repeat:no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: top;
     background-size:100%;
