@@ -32,6 +32,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     overflow: hidden;
+    cursor: pointer;
 
     transition: background-color 0.5s, color 0.5s, width 0.5s;
 }
@@ -45,6 +46,10 @@
     background-color: green;
     color:black;
     width: 150px;
+}
+
+.tilebox .tile:hover .gobutton:hover {
+    background-color: #00b000;
 }
 
 .tilebox .tile a:link, .tilebox .tile a:visited {
