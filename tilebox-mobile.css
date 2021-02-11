@@ -16,13 +16,14 @@
     height: 200px;
     overflow:hidden;
     color:rgba(255,255,255,0);
-    transition: color 0.5s, width 0.5s, height 0.5s, margin 0.5s, z-index 0.5s;
+    /* transition: color 0.5s, width 0.5s, height 0.5s, margin 0.5s, z-index 0.5s; */
     display: default;
     position: relative;
     vertical-align: top;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14pt;
     transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
     z-index: 5;
 }
 /*////////////////////////////////////////////*/
@@ -36,11 +37,12 @@
     font-weight: bolder;
     overflow: hidden;
 
-    transition: background-color 0.5s, color 0.5s, width 0.5s;
+    /* transition: background-color 0.5s, color 0.5s, width 0.5s; */
 }
 .tilebox .tile .gobutton div {
     width: 140px;
     transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
     margin: 0 50% 0 50%;
 } 
 
@@ -53,13 +55,13 @@
 .tilebox .tile a:link, .tilebox .tile a:visited {
     color:rgba(255,255,255,0);
     text-decoration: underline dotted;
-    transition: color 0.5s;
+    /* transition: color 0.5s; */
 }
 
 .tilebox .tile p{
     font-size: 12pt;
     font-weight: normal;
-    transition: color 0.5s;
+    /* transition: color 0.5s; */
 }
 
 .tilebox .tile img {
@@ -68,7 +70,8 @@
     width: 200px;
     height: 200px;
     filter: blur(0) brightness(100%);
-    transition: filter 0.5s, width 0.5s, height 0.5s;
+    -webkit-filter: blur(0) brightness(100%);
+    /* transition: width 0.5s, height 0.5s; */
 }
 
 .tilebox .tileclicked img {
@@ -77,6 +80,7 @@
     width: 300px;
     height: 300px;
     filter: blur(5px) brightness(50%);
+    -webkit-filter: blur(5px) brightness(50%);
 }
 
 .tilebox .tile h3 {
@@ -84,8 +88,9 @@
     margin: -50% 50% 50% 50%;
     width: 250px;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%,-50%);
     text-align: center;
-    transition: color 0.5s;
+    /* transition: color 0.5s; */
 }
 
 .tilebox .tileclicked {

@@ -1,195 +1,225 @@
 @keyframes toWhite {
-    from {background-color: transparent; border-bottom: 0px solid transparent; color:white;}
-    to {background-color: white; border-bottom: 1px solid #cccccc;color:black;}
+  from {background-color: transparent; border-bottom: 0px solid transparent; color:white;}
+  to {background-color: white; border-bottom: 1px solid #cccccc;color:black;}
+}
+@keyframes toClear {
+  from {background-color: white; border-bottom: 1px solid #cccccc;color:black;}
+  to {background-color: transparent; border-bottom: 0px solid transparent;color:white;}
+}
+@keyframes toDownX {
+  from {
+    left:15px; 
+    top:16px; 
+    transform:rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
-  @keyframes toClear {
-    from {background-color: white; border-bottom: 1px solid #cccccc;color:black;}
-    to {background-color: transparent; border-bottom: 0px solid transparent;color:white;}
+  to {
+    left:15px; 
+    top:23px; 
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
   }
-  @keyframes toDownX {
-    from {
-      left:15px; 
-      top:16px; 
-      transform:rotate(0deg);
+}
+@keyframes toUpX {
+  from {
+    left:15px; 
+    top:22px; 
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+  }
+  to {
+    left:15px; 
+    top:15px;
+    transform:rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}
+@keyframes toNoX {
+  from {
+    left: 15px;
+    width: 20px;
+  }
+  to {
+    left: 25px;
+    width: 0px;
+  }
+}
+
+@keyframes toOpenSidebar {
+    from{
+        width: 0px;
+        padding: 0px 0px 0px 0px;
     }
     to {
-      left:15px; 
-      top:23px; 
-      transform:rotate(45deg);
+        width: 220px;
+        padding: 0px 20px 0px 20px;
     }
-  }
-  @keyframes toUpX {
-    from {
-      left:15px; 
-      top:22px; 
-      transform:rotate(0deg);
-    }
-    to {
-      left:15px; 
-      top:15px;
-      transform:rotate(-45deg);
-    }
-  }
-  @keyframes toNoX {
-    from {
-      left: 15px;
-      width: 20px;
-    }
-    to {
-      left: 25px;
-      width: 0px;
-    }
-  }
+}
 
-  @keyframes toOpenSidebar {
-      from{
-          width: 0px;
-          padding: 0px 0px 0px 0px;
-      }
-      to {
-          width: 220px;
-          padding: 0px 20px 0px 20px;
-      }
-  }
+html {
+  padding: 0 0 0 0;
+  overflow-x: hidden;
+}
+body {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+#mainTitle {
+  top: 0;
+  left: 0;
+  width:100%;
+  padding: 10px 10px 10px 10px;
+  background-color:unset;
+  font-family: Courier New, Courier, monospace;
+  position:fixed;
+  border-bottom: unset;
+  z-index: 99999999;
+  color: white;
+}
 
-  html {
-    padding: 0 0 0 0;
-    overflow-x: hidden;
-  }
-  body {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-  }
-  #mainTitle {
-    top: 0;
-    left: 0;
-    width:100%;
-    padding: 10px 10px 10px 10px;
-    background-color:unset;
-    font-family: Courier New, Courier, monospace;
-    position:fixed;
-    border-bottom: unset;
-    z-index: 99999999;
-    color: white;
-  }
+#mainTitle .NavButton {
+  vertical-align: middle;
+  margin: 0 0 0 0;
+  padding: 0 5px 0 5px;
+  font-size: 1.5em;
+  display: inline-table;
+  text-shadow: 0 0 0 #000000;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: transform 0.5s, -webkit-transform 0.5s, text-shadow 1s;
+}
 
-  #mainTitle .NavButton {
-    vertical-align: middle;
-    margin: 0 0 0 0;
-    padding: 0 5px 0 5px;
-    font-size: 1.5em;
-    display: inline-table;
-    text-shadow: 0 0 0 #000000;
-    transform: scale(1);
-    transition: transform 0.5s, text-shadow 1s;
-  }
+#mainTitle .NavButton:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  text-shadow: 2px 2px 2px #00000099;
+}
 
-  #mainTitle .NavButton:hover {
-    transform: scale(1.1);
-    text-shadow: 2px 2px 2px #00000099;
-  }
+#mainTitle .CurrentNav {
+  /*background-color: #00000022;*/
+  font-weight: bold;
+}
 
-  #mainTitle .CurrentNav {
-    /*background-color: #00000022;*/
-    font-weight: bold;
-  }
+#mainTitle .NavButton a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
-  #mainTitle .NavButton a {
-    color: inherit;
-    text-decoration: inherit;
-  }
+.mainContent, #mainContent {
+  margin: 40vh 0 -10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 1px 10% 50px 10%;
+  top:40vh;
+}
+.mainContent a:link, #mainContent a:link {
+  color:green;
+  text-decoration: underline dotted;
+}
+.mainContent a:visited, #mainContent a:visited {
+  color:darkgreen;
+  text-decoration: underline solid;
+}
+#footer {
+  background-color: #dddddd;
+  color: #555555;
+  font-family: sans-serif;
+  /*margin: 5px 0 5px 0;*/
+  padding: 20px 50px 0px 50px;
+  vertical-align: text-bottom;
+  /*width: 100%;
+  /*font-size: 8pt;*/
+}
+#footer a:link {
+  color:#555555;
+  text-decoration:underline dotted;
+}
+#footer a:visited {
+  color: #222222;
+  text-decoration: underline dotted;
+}
+#coolBackground{
+  background-image:url("background2.png");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: top;
+  background-size:100%;
+  background-color: rgb(0,122,0);
+  width: 100%;
+  height: 40vh;
+  position:absolute;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
 
-  .mainContent, #mainContent {
-    margin: 40vh 0 -10px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    color: black;
-    padding: 1px 10% 50px 10%;
-    top:230px;
-  }
-  .mainContent a:link, #mainContent a:link {
-    color:green;
-    text-decoration: underline dotted;
-  }
-  .mainContent a:visited, #mainContent a:visited {
-    color:darkgreen;
-    text-decoration: underline solid;
-  }
-  #footer {
-    background-color: #dddddd;
-    color: #555555;
-    font-family: sans-serif;
-    /*margin: 5px 0 5px 0;*/
-    padding: 20px 50px 0px 50px;
-    vertical-align: text-bottom;
-    /*width: 100%;
-    /*font-size: 8pt;*/
-  }
-  #footer a:link {
-    color:#555555;
-    text-decoration:underline dotted;
-  }
-  #footer a:visited {
-    color: #222222;
-    text-decoration: underline dotted;
-  }
+@media only screen and (max-device-width : 480px) {
   #coolBackground{
-    background-image:url("background2.png");
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    background-position: top;
-    background-size:100%;
-    background-color: rgb(0,122,0);
-    width: 100%;
-    height: 40vh;
-    position:absolute;
-    left: 0;
-    top: 0;
-    z-index: -5;
+    background-size:150%;
   }
+  #mainTitle .NavButton {
+    font-size: 0;
+  }
+}
 
-  @media only screen and (max-device-width : 480px) {
-    #coolBackground{
-      background-size:150%;
-    }
-    #mainTitle .NavButton {
-      font-size: 0;
-    }
-  }
-
-  /*sidebar*/
-  #sidebar1 {
-      position: fixed;
-      width: 0px;
-      right:0px;
-      top: 0px;
-      background-color:white;
-      border-left: 1px solid #eeeeee;
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 0px 0px 0px 0px;
-      overflow: hidden;
-      color: black;
-  }
-  #sidebar1 a:link{
-    color:green;
-    text-decoration: underline dotted;
-  }
-  #sidebar1 a:visited{
-    color:darkgreen;
-    text-decoration: underline solid;
-  }
-  #innersidebar{
-    width: 200px;
-    overflow-y: auto;
+/*sidebar*/
+#sidebar1 {
+    position: fixed;
+    width: 0px;
+    right:0px;
+    top: 0px;
+    height: 100vh;
+    background-color:white;
+    border-left: 1px solid #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0px 0px 0px 0px;
-    height:100%;
-  }
-  .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
-  }
+    overflow: hidden;
+    color: black;
+    transition: padding 0.3s, width 0.3s;
+}
+#sidebar1 a:link{
+  color:green;
+  text-decoration: underline dotted;
+}
+#sidebar1 a:visited{
+  color:darkgreen;
+  text-decoration: underline solid;
+}
+#innersidebar{
+  width: 200px;
+  overflow-y: auto;
+  padding: 0px 0px 0px 0px;
+  height:100%;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#TopHamburger {
+  left: 15px;
+  top: 15px;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: top 0.3s, -webkit-transform 0.3s,transform 0.3s;
+}
+
+#MidHamburger {
+  width: 20px;
+  left: 15px;
+  transition: width 0.3s, left 0.3s;
+}
+
+#LowHamburger {
+  left: 15px;
+  top: 22px;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: left 0.3s, top 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
